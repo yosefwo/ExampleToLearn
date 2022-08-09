@@ -1,6 +1,7 @@
 package delete;
 
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -30,7 +31,7 @@ public class Quiz {
         StringBuilder result = new StringBuilder("" + upper.charAt(0));
         for (int i = 1; i < s.length(); i++) {
             result.append("-").append(upper.charAt(i));
-            result.append(String.valueOf(s.charAt(i)).repeat(i));
+            result.append(String.valueOf(s.charAt(i)).repeat(i));// במקום לולאת פור אני עושה ריפיט עד מתי
         }
         return result.toString();
     }
@@ -58,14 +59,44 @@ public class Quiz {
         }
         return a == b ? a : res;
     }
+
+    public static String pigIt(String str) {
+        String[] splitArr = str.split(" ");
+        for (int i = 0; i < splitArr.length; i++) {
+            if (splitArr[i].length() < 2)
+                continue;
+            char ch = splitArr[i].charAt(0);
+            splitArr[i] = splitArr[i].substring(1) + ch + "ay";
+            if (i < splitArr.length -1)
+                splitArr[i] = splitArr[i].substring(1) + " ";
+
+        }
+       /* for (String s: splitArr) {
+            var ch = s.charAt(0);
+            s = s.substring(1) + ch + "ay";
+        }*/
+        return Arrays.stream(splitArr).collect(Collectors.joining());
+    }
+
+    public static String camelCase(String str) {
+        /*String[] splitArr = str.split(" ");
+        for (int i = 0; i < splitArr.length; i++) {
+            if (splitArr[i].length() < 1)
+                continue;
+            char ch = Character.toUpperCase(splitArr[i].charAt(0));
+            splitArr[i] = ch + splitArr[i].substring(1);
+        }
+        return Arrays.stream(splitArr).collect(Collectors.joining());*/
+        return (str == null || str.isEmpty())?"":Arrays.stream(str.trim().split(" "))
+                .map(s -> s.substring(0,1).toUpperCase()+s.substring(1))
+                .collect(Collectors.joining());
+    }
+
     public static void main(String[] args) {
         var v = solution("saasfhjkiusdafjkauewo");
         for (String a: v){
             System.out.println(a);
         }
-
-
-
         int n = squareDigits(91191);
 
         System.out.println(n);
@@ -85,8 +116,11 @@ public class Quiz {
         System.out.println(GetSum(1,1));
         System.out.println(GetSum(-1,0));
         System.out.println(GetSum(-1,2));
+        System.out.println(pigIt("Pig latin is cool")); // igPay atinlay siay oolcay
+        System.out.println(pigIt("Hello world !"));
 
-
+        System.out.println(camelCase("hello case")); // => "HelloCase"
+        System.out.println(camelCase("camel case word")); // => "CamelCaseWord"
 
 
     }
