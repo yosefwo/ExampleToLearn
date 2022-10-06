@@ -1,4 +1,4 @@
-package delete;
+package general;
 
 public class Child {
     private float x;

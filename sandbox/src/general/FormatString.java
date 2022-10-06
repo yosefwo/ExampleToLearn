@@ -1,4 +1,4 @@
-package delete;
+package general;
 
 import java.util.Scanner;
 public class FormatString {

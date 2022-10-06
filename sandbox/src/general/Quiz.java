@@ -1,4 +1,4 @@
-package delete;
+package general;
 
 
 import java.util.*;
@@ -204,9 +204,117 @@ public class Quiz {
         }
         return list1_9;
     }
+   /* public static String formatDuration(int seconds) {
+        int[] partTime = {365 * 24 * 60 * 60, 24 * 60 * 60, 60 * 60, 60, 1};
+        String[] namePart = {" year", " day", " hour", " minute", " second"};
+        List<String> listPart = new ArrayList<>();
+        if (seconds < 1)
+            return "0";
+        for (int i = 0; i < 5; i++) {
+            if (seconds >= partTime[i]) {
+                int time = seconds / partTime[i];
+                seconds -= time * partTime[i];
+                String str= "" + time + namePart[i];
+                str +=time > 1 ? "s" : "";
+                listPart.add(str);
+            } else
+                namePart[i] = "";
+        }
+       for (int i = 0; i < listPart.size()-2; i++) {
+            listPart.set(i, listPart.get(i) + ", ");
+        }
+         if (listPart.size()>1)
+            listPart.set(listPart.size()-1," and " +listPart.get(listPart.size()-1));
+        return listPart.stream().collect(Collectors.joining());
+    }*/
+   public static String formatDuration(int seconds) {
+       String res = "";
+       int[] units = new int[] {31536000, 86400, 3600, 60, 1};
+       String[] labels = new String[] {"year", "day", "hour", "minute", "second"};
 
-    public static void main(String[] args) {
-        var v = solution("saasfhjkiusdafjkauewo");
+       if (seconds == 0) return "now";
+
+       for (int i = 0; i < 5; i++) {
+           if (seconds >= units[i]) {
+               int q = seconds / units[i];
+               seconds = seconds % units[i];
+               res += (res.equals("") ? "" : (seconds == 0 ? " and " : ", "))
+                       + q + " " + labels[i] + (q > 1 ? "s" : "");
+           }
+       }
+       return res;
+   }
+
+    public static int romanToInt(String s) {
+        int res = 0;
+        char[] chars = s.toCharArray();
+        for (int i = 0; i < chars.length; i++) {
+            boolean end = i + 1 == chars.length? true:false;
+            switch (chars[i]) {
+                case 'M'-> res += 1000;
+                case 'D'-> res += 500;
+                case 'C' -> {
+                    if (end) {
+                        res += 100;
+                        return res;
+                    }
+                    if (chars[i + 1] == 'M') {
+                        res += 900;
+                        i++;
+                    } else if (chars[i + 1] == 'D') {
+                        res += 400;
+                        i++;
+                    } else
+                        res += 100;
+                }
+                case 'L'-> res += 50;
+                case 'X' -> {
+                    if (end) {
+                        res += 10;
+                        return res;
+                    }
+                    if (chars[i + 1] == 'C') {
+                        res += 90;
+                        i++;
+                    } else if (chars[i + 1] == 'L') {
+                        res += 40;
+                        i++;
+                    } else
+                        res += 10;
+                }
+                case 'V'-> res += 5;
+                case 'I' -> {
+                    if (end) {
+                        res += 1;
+                        return res;
+                    }
+                    if (chars[i + 1] == 'X') {
+                    res += 9;
+                    i++;
+                    } else if (chars[i + 1] == 'V') {
+                        res += 4;
+                        i++;
+                    } else
+                        res += 1;
+                }
+            }
+        }
+        return res;
+    }
+//    public String intToRoman(int num) {
+//        String toString = Integer.toString(num);
+//        StringBuilder result = new StringBuilder();
+//        for (int i = toString.length()-1; i > -1; i--) {
+//            int digit = Integer.parseInt(String.valueOf(toString.charAt(i)));
+//            result.append(digit * digit);
+//        }
+//        return Integer.parseInt(result.toString());
+//    }
+
+
+
+        public static void main(String[] args) {
+     /*   var v = solution("saasfhjkiusdafjkauewo");
         for (String a: v){
             System.out.println(a);
         }
@@ -283,5 +391,17 @@ public class Quiz {
         sudoku[4][4] = 0;
 
         System.out.println(check(sudoku));
+//        System.out.println(formatDuration(1));
+        System.out.println("1 second"+" || "+ formatDuration(1));
+        System.out.println("1 minute and 2 seconds"+" || "+ formatDuration(62));
+        System.out.println("2 minutes"+" || "+ formatDuration(120));
+        System.out.println("1 hour"+" || "+ formatDuration(3600));
+        System.out.println("1 hour, 1 minute and 2 seconds"+" || "+ formatDuration(3662));
+        */
+            System.out.println(romanToInt("III"));
+            System.out.println(romanToInt("LVIII"));
+            System.out.println(romanToInt("MCMXCIV"));
+
+
     }
 }

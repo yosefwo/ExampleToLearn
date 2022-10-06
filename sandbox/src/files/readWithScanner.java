@@ -11,8 +11,7 @@ public class readWithScanner {
             Scanner sc = new Scanner(x);
             System.out.println(sc.nextInt());
             while(sc.hasNext()) {
-                System.out.println(sc.next());
-            }
+                System.out.println(sc.next());}
             sc.close();
         } catch (FileNotFoundException e) {
             System.out.println("Error");
