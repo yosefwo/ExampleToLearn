@@ -1,0 +1,13 @@
+
+]
+java:S1192"GDefine a constant instead of duplicating this literal "zundel" 3 times.(·û×ª
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(íûÃ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(óĞÅ¹
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Å­Ëİúÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(œŸç ıÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ş›
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(ÑåÉ÷üÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(œŸç ıÿÿÿÿ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(Ã”…ªûÿÿÿÿ
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(¬¦»äşÿÿÿÿ
+N	java:S106-"9Replace this use of System.out or System.err by a logger.(¼²¶ì

@@ -1,0 +1,74 @@
+
+F
+java:S3740£"/Provide the parametrized type for this generic.(ÅœèÂ
+F
+java:S3740«"/Provide the parametrized type for this generic.(ÅœèÂ
+F
+java:S3740¶"/Provide the parametrized type for this generic.(ÅœèÂ
+F
+java:S3740È"/Provide the parametrized type for this generic.(ë÷Í“
+c
+java:S1192ü"GDefine a constant instead of duplicating this literal "commas" 4 times.(æ•öšùÿÿÿÿ
+g	java:S117£"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅœèÂ
+g	java:S117«"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅœèÂ
+g	java:S117¶"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅœèÂ
+l	java:S117É"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ş‡„¿ùÿÿÿÿ
+m
+java:S6204'"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ëî‰ÿÿÿÿÿ
+a
+java:S1612'"FReplace this lambda with method reference 'Integer.class::isInstance'.(ëî‰ÿÿÿÿÿ
+V	java:S125)"<This block of commented-out lines of code should be removed.(Ö¨äÇüÿÿÿÿ
+Q	java:S1254"<This block of commented-out lines of code should be removed.(ôÒÁ–
+h	java:S1006"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Š‡Ã¾úÿÿÿÿ
+V	java:S125I"<This block of commented-out lines of code should be removed.(ºòÓ¥ÿÿÿÿÿ
+P	java:S125Q"<This block of commented-out lines of code should be removed.(±Ä¼E
+Q	java:S125`"<This block of commented-out lines of code should be removed.(ù‘ˆ½
+@
+java:S1197y"*Move the array designators [] to the type.(òèÖƒ
+Q	java:S125z"<This block of commented-out lines of code should be removed.(ÜŠ•
+R	java:S125†"<This block of commented-out lines of code should be removed.(Ä™ºé
+i
+java:S3776 "RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(©ÉÌÿ
+H
+java:S1659²",Declare "colSquareStart" on a separate line.(™ã¾“úÿÿÿÿ
+D
+java:S1659³"-Declare "colSquareLength" on a separate line.(âˆ–†
+G
+java:S1481´"+Remove this unused "count1" local variable.(ŒÚ„üÿÿÿÿ
+8
+java:S1116Å"Remove this empty statement.(ôŸìúÿÿÿÿ
+d	java:S100È"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ë÷Í“
+T	java:S106Ó"9Replace this use of System.out or System.err by a logger.(æ¨¤šøÿÿÿÿ
+O	java:S106×"9Replace this use of System.out or System.err by a logger.(†™ñ‹
+N	java:S106Ø"9Replace this use of System.out or System.err by a logger.(´¢¯j
+O	java:S106Ù"9Replace this use of System.out or System.err by a logger.(–¤Äª
+O	java:S106Ú"9Replace this use of System.out or System.err by a logger.(ÆÀûı
+O	java:S106à"9Replace this use of System.out or System.err by a logger.(ëÎÙ’
+O	java:S106á"9Replace this use of System.out or System.err by a logger.(ĞÆøÉ
+T	java:S106â"9Replace this use of System.out or System.err by a logger.(ûï„ÿÿÿÿÿ
+N	java:S106ã"9Replace this use of System.out or System.err by a logger.(ğ‚•x
+T	java:S106ä"9Replace this use of System.out or System.err by a logger.(éÊ±‚şÿÿÿÿ
+T	java:S106å"9Replace this use of System.out or System.err by a logger.(¬Ÿßıÿÿÿÿ
+O	java:S106æ"9Replace this use of System.out or System.err by a logger.(©ŠÌ
+O	java:S106ç"9Replace this use of System.out or System.err by a logger.(Ã»ı
+O	java:S106è"9Replace this use of System.out or System.err by a logger.(æÀÌã
+T	java:S106é"9Replace this use of System.out or System.err by a logger.(ÄÇöûÿÿÿÿ
+T	java:S106ë"9Replace this use of System.out or System.err by a logger.(¦°ÌĞøÿÿÿÿ
+O	java:S106ì"9Replace this use of System.out or System.err by a logger.(ÚêÚá
+T	java:S106î"9Replace this use of System.out or System.err by a logger.(Œ¢¾¸şÿÿÿÿ
+O	java:S106ï"9Replace this use of System.out or System.err by a logger.(–Ğ‡
+T	java:S106ğ"9Replace this use of System.out or System.err by a logger.(™Ô¨íúÿÿÿÿ
+T	java:S106ò"9Replace this use of System.out or System.err by a logger.(ÜÆş˜ûÿÿÿÿ
+T	java:S106ó"9Replace this use of System.out or System.err by a logger.(ù²Ÿşüÿÿÿÿ
+N	java:S106ù"9Replace this use of System.out or System.err by a logger.(®Ã³v
+R	java:S125õ"<This block of commented-out lines of code should be removed.(×ÊÀ«
+N	java:S106ú"9Replace this use of System.out or System.err by a logger.(é«ç^
+O	java:S106û"9Replace this use of System.out or System.err by a logger.(µ÷°ñ
+T	java:S106ü"9Replace this use of System.out or System.err by a logger.(æ•öšùÿÿÿÿ
+O	java:S106ı"9Replace this use of System.out or System.err by a logger.(Øõôš
+O	java:S106ş"9Replace this use of System.out or System.err by a logger.(‘”ì±
+T	java:S106€"9Replace this use of System.out or System.err by a logger.(á«È®üÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(Şµ¥õşÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(ƒ¢İÓıÿÿÿÿ
+T	java:S106”"9Replace this use of System.out or System.err by a logger.(ƒ¢İÓıÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(ƒ¢İÓıÿÿÿÿ
